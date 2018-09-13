@@ -144,7 +144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0842348c101cd4895a03f3203ba7ac34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  difficulty: 0.01
+  difficulty: 0.1
   rotationIncrement: 50
   rotationRatio: 20
   maxRotation: 0.2
@@ -402,7 +402,7 @@ Prefab:
     - target: {fileID: 114684621993270356, guid: 7f5fea25dff644e6d95791aba7a99377,
         type: 2}
       propertyPath: difficulty
-      value: 0.01
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 114684621993270356, guid: 7f5fea25dff644e6d95791aba7a99377,
         type: 2}
@@ -432,6 +432,11 @@ Prefab:
         type: 2}
       propertyPath: m_Mass
       value: 0.0000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 54577999430576312, guid: 7f5fea25dff644e6d95791aba7a99377,
+        type: 2}
+      propertyPath: m_CollisionDetection
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7f5fea25dff644e6d95791aba7a99377, type: 2}

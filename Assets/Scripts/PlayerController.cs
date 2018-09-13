@@ -17,12 +17,13 @@ public class PlayerController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         minSpeed = startingSpeed;
+        speed = startingSpeed;
     }
 
     // Update is called once per frame
     void Update () {
         // increment the position forward based on speed
-        transform.Translate(Vector3.forward * speed,
+        transform.Translate(Vector3.forward * speed * Time.deltaTime,
                             Space.World);
 
         // change the rotation

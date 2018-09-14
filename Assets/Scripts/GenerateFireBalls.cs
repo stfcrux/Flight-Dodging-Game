@@ -18,18 +18,18 @@ public class GenerateFireBalls : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         for (int i = 0; i < rowsShowing; i++) {
-            genNextRow();
+            GenNextRow();
         }
 	}
 
     private void Update()
     {
         if (player.transform.position.z + rowDistanceApart * rowsShowing > nextRow) {
-            genNextRow();
+            GenNextRow();
         }
     }
 
-    void genNewFireBalls(float z) {
+    void GenNewFireBalls(float z) {
 
         for (int i = 0; i < objectPerRow; i++)
         {
@@ -39,8 +39,8 @@ public class GenerateFireBalls : MonoBehaviour {
         }
     }
 
-    void genNextRow() {
-        genNewFireBalls(nextRow);
+    void GenNextRow() {
+        GenNewFireBalls(nextRow);
         nextRow += rowDistanceApart;
     }
 }

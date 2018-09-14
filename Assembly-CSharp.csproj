@@ -62,7 +62,10 @@
     <Compile Include="Assets\Scripts\FireBallController.cs" />
     <Compile Include="Assets\Scripts\GenerateFireBalls.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
-    <Compile Include="Assets\WallController.cs" />
+    <Compile Include="Assets\Scripts\SceneLoader.cs" />
+    <Compile Include="Assets\Scripts\SpeedScoreController.cs" />
+    <Compile Include="Assets\Scripts\TerrainManager.cs" />
+    <Compile Include="Assets\Scripts\WallController.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>/Users/trent/Developer/COMP30019/COMP30019-Project2/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>

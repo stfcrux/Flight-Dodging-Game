@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class FireBallController : MonoBehaviour {
 
     public GameObject player;
+    public UnityEvent gameOver;
 
 	// Use this for initialization
     void Start () {
@@ -20,14 +22,5 @@ public class FireBallController : MonoBehaviour {
             Destroy(this.gameObject);
         }
 	}
-
-    void OnCollisionEnter (Collision col)
-    {
-        if (col.gameObject == player)
-        {
-            Destroy(col.gameObject);
-        }
-    }
-
 
 }

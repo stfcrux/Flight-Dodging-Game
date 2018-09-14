@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.EventSystems;
+using UnityEngine.Events;
 
 public class PlayerController : MonoBehaviour {
 
@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour {
     public float maxRotation;
     public float startingSpeed;
     public float upIncrement;
-    public GameObject gameOverDisplay;
+    public UnityEvent gameOverEvent;
 
     private float minSpeed;
     private float speed;
@@ -82,10 +82,12 @@ public class PlayerController : MonoBehaviour {
     {
         if (col.gameObject.CompareTag("fireball"))
         {
-            // todo create event manager and use that
-            gameOverDisplay.SetActive(true);
-            stopped = true;
+            gameOverEvent.Invoke();
         }
+    }
+
+    public void Stop() {
+        stopped = true;
     }
 
 }

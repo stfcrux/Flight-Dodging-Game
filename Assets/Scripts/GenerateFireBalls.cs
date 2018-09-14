@@ -33,7 +33,7 @@ public class GenerateFireBalls : MonoBehaviour {
 
         for (int i = 0; i < objectPerRow; i++)
         {
-            GameObject fb = Instantiate(fireball,
+            Instantiate(fireball,
                         new Vector3(Random.Range(minX, maxX),y,z),
                         Quaternion.identity);
         }

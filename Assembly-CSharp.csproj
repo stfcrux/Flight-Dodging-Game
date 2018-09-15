@@ -62,6 +62,7 @@
     <Compile Include="Assets\Scripts\FireBallController.cs" />
     <Compile Include="Assets\Scripts\GenerateFireBalls.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\RotatePropeller.cs" />
     <Compile Include="Assets\Scripts\SceneLoader.cs" />
     <Compile Include="Assets\Scripts\SpeedScoreController.cs" />
     <Compile Include="Assets\Scripts\TerrainManager.cs" />

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GenerateFireBalls : MonoBehaviour {
 
+    // the fireball prefab
     public GameObject fireball;
     public GameObject player;
     public float objectPerRow;
@@ -13,10 +14,10 @@ public class GenerateFireBalls : MonoBehaviour {
     public float maxX;
     public float rowsShowing;
 
-    private float nextRow = 10;
+    float nextRowZ = 10;
 
-	// Use this for initialization
 	void Start () {
+        // gen the number of rows that should be showing
         for (int i = 0; i < rowsShowing; i++) {
             GenNextRow();
         }
@@ -24,15 +25,17 @@ public class GenerateFireBalls : MonoBehaviour {
 
     private void Update()
     {
-        if (player.transform.position.z + rowDistanceApart * rowsShowing > nextRow) {
+        // generate a new row if we have moved rowDistanceApart since generating
+        // the last one
+        if (player.transform.position.z + rowDistanceApart * rowsShowing
+                > nextRowZ) {
             GenNextRow();
         }
     }
 
     void GenNewFireBalls(float z) {
-
-        for (int i = 0; i < objectPerRow; i++)
-        {
+        // generate objectPerRows random x fireballs
+        for (int i = 0; i < objectPerRow; i++) {
             Instantiate(fireball,
                         new Vector3(Random.Range(minX, maxX),y,z),
                         Quaternion.identity);
@@ -40,7 +43,7 @@ public class GenerateFireBalls : MonoBehaviour {
     }
 
     void GenNextRow() {
-        GenNewFireBalls(nextRow);
-        nextRow += rowDistanceApart;
+        GenNewFireBalls(nextRowZ);
+        nextRowZ += rowDistanceApart;
     }
 }

@@ -8,17 +8,19 @@ public class FireBallController : MonoBehaviour {
     public GameObject player;
     public UnityEvent gameOver;
 
-	// Use this for initialization
+    readonly float VIEW_MARGIN = 1;
     void Start () {
-        if (player == null)
-        {
+        // becuase the fireball is a prefab we will need to set the player
+        // ourselves
+        if (player == null) {
             player = GameObject.Find("Player");
         }
     }
 
-    // Update is called once per frame
     void Update () {
-        if (player.transform.position.z > this.transform.position.z) {
+        // if no longer in view (with some margin to be safe) destroy self
+        if (player.transform.position.z >
+                this.transform.position.z + VIEW_MARGIN) {
             Destroy(this.gameObject);
         }
 	}

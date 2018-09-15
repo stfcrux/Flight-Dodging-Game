@@ -5,11 +5,12 @@ using UnityEngine;
 public class WallController : MonoBehaviour {
 
     public GameObject player;
+    public float showDistance;
 
-	// Update is called once per frame
 	void Update () {
+        // only show the wall if the player is within showDistance of it
         GetComponent<Renderer>().enabled =
-            Mathf.Abs(player.transform.position.x - transform.position.x) < 3;
+            Mathf.Abs(player.transform.position.x - transform.position.x) < showDistance;
 	}
 }
 

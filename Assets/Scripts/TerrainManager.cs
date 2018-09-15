@@ -10,7 +10,7 @@ public class TerrainManager : MonoBehaviour {
 	void Update () {
         // if the terrain is no longer in view move it to be in view beyond
         // the other terrain
-        if (player.transform.position.z > transform.position.z + 500) {
+        if (player.transform.position.z > transform.position.z + 1100) {
             transform.Translate(Vector3.forward * 2000);
         }
 	}

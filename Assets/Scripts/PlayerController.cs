@@ -17,13 +17,19 @@ public class PlayerController : MonoBehaviour {
 
     bool stopped = false;
 
-    public float MinSpeed { get; private set; }
-    public float Speed { get; private set; }
+    /*public float MinSpeed { get; private set; }
+    public float Speed { get; private set; } */
+
+    public float MinSpeed;
+    public float Speed; 
 
     void Start () {
-        MinSpeed = startingSpeed;
+
+        // min speed affected at difficulty options
+        /*MinSpeed = startingSpeed;*/
         Speed = startingSpeed;
-    }
+       
+    } 
 
     void Update () {
         // only move if the obejct is not stopped

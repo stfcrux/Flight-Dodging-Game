@@ -9,7 +9,6 @@ public class PlayerController : MonoBehaviour {
     public float rotationIncrement;
     public float rotationRatio;
     public float maxRotation;
-    public float startingSpeed;
     public float upIncrement;
     public float outOfBoundsX;
 
@@ -17,18 +16,13 @@ public class PlayerController : MonoBehaviour {
 
     bool stopped = false;
 
-    /*public float MinSpeed { get; private set; }
-    public float Speed { get; private set; } */
-
-    public float MinSpeed;
-    public float Speed; 
+    public float MinSpeed { get; private set; }
+    public float Speed { get; private set; }
 
     void Start () {
-
+        float startingSpeed = 1.0f + (GlobalOptions.difficulty * 20.0f);
         // min speed affected at difficulty options
-        /*MinSpeed = startingSpeed;*/
-        Speed = startingSpeed;
-       
+        MinSpeed = startingSpeed;
     } 
 
     void Update () {

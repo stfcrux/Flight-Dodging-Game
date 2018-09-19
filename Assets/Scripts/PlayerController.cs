@@ -5,7 +5,6 @@ using UnityEngine.Events;
 
 public class PlayerController : MonoBehaviour {
 
-    public float minAcceleration;
     public float rotationIncrement;
     public float rotationRatio;
     public float maxRotation;
@@ -19,10 +18,12 @@ public class PlayerController : MonoBehaviour {
     public float MinSpeed { get; private set; }
     public float Speed { get; private set; }
 
+    private float minAcceleration;
+
     void Start () {
-        float startingSpeed = 1.0f + (GlobalOptions.difficulty * 20.0f);
+        minAcceleration = GlobalOptions.difficulty * 0.3f + 0.2f;
         // min speed affected at difficulty options
-        MinSpeed = startingSpeed;
+        MinSpeed = minAcceleration * 10;
     } 
 
     void Update () {

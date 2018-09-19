@@ -73,6 +73,10 @@ public class PlayerController : MonoBehaviour {
 
     public void Stop() {
         stopped = true;
+        Renderer[] renderers = GetComponentsInChildren<Renderer>();
+        for (int i = 0; i < renderers.Length; i++) {
+            renderers[i].enabled = false;
+        }
     }
 
 }

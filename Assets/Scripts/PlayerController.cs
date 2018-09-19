@@ -21,9 +21,8 @@ public class PlayerController : MonoBehaviour {
     private float minAcceleration;
 
     void Start () {
-        minAcceleration = GlobalOptions.difficulty * 0.3f + 0.2f;
-        // min speed affected at difficulty options
-        MinSpeed = minAcceleration * 10;
+        minAcceleration = GlobalOptions.difficulty * 0.3f + 0.1f;
+        MinSpeed = GlobalOptions.difficulty * 9 + 1;
     } 
 
     void Update () {

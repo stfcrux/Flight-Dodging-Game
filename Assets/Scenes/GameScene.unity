@@ -332,7 +332,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0842348c101cd4895a03f3203ba7ac34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minAcceleration: 0.1
   rotationIncrement: 50
   rotationRatio: 20
   maxRotation: 0.2
@@ -482,9 +481,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 019f67c3aaf06d541a0fc4b0aa72b4e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreText: {fileID: 0}
-  healthText: {fileID: 0}
-  player: {fileID: 0}
 --- !u!1 &272550595
 GameObject:
   m_ObjectHideFlags: 0
@@ -910,7 +906,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 584238412}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1958255866}
+        m_MethodName: StartGameScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &584238412
@@ -1312,7 +1319,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1012258038}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1958255866}
+        m_MethodName: StartMainMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1012258038
@@ -2250,9 +2268,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 019f67c3aaf06d541a0fc4b0aa72b4e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreText: {fileID: 0}
-  healthText: {fileID: 0}
-  player: {fileID: 106152099}
 --- !u!4 &1958255865
 Transform:
   m_ObjectHideFlags: 0

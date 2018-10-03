@@ -62,9 +62,11 @@
     <Compile Include="Assets\Scripts\AirPlaneScript.cs" />
     <Compile Include="Assets\Scripts\ExplosionCreator.cs" />
     <Compile Include="Assets\Scripts\FireBallController.cs" />
+    <Compile Include="Assets\Scripts\FogController.cs" />
     <Compile Include="Assets\Scripts\FollowPlayer.cs" />
     <Compile Include="Assets\Scripts\FollowPlayerZ.cs" />
     <Compile Include="Assets\Scripts\GenerateFireBalls.cs" />
+    <Compile Include="Assets\Scripts\GenerateFog.cs" />
     <Compile Include="Assets\Scripts\GlobalOptions.cs" />
     <Compile Include="Assets\Scripts\OptionsController.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
@@ -78,17 +80,17 @@
     <None Include="Assets\Shaders\PhongShader.shader" />
     <None Include="Assets\Shaders\WaveShader.shader" />
     <None Include="Assets\Shaders\CelShader.shader" />
+    <Reference Include="UnityEditor.StandardEvents">
+      <HintPath>/Users/trent/Developer/comp30019-project2/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro.Editor">
+      <HintPath>/Users/trent/Developer/comp30019-project2/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
       <HintPath>/Users/trent/Developer/comp30019-project2/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>/Users/trent/Developer/comp30019-project2/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>/Users/trent/Developer/comp30019-project2/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>/Users/trent/Developer/comp30019-project2/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

@@ -38,6 +38,9 @@ Shader "Unlit/PhongShader"
         _Kd("Kd", Float) = 0.8
         _fAtt("fAtt", Float) = 1
         _specN("specN", Float) = 1
+        
+         _Texture ("_Texture", 2D) = "" { }
+
     }
         SubShader
     {
@@ -56,12 +59,14 @@ Shader "Unlit/PhongShader"
     uniform float _Kd;
     uniform float _fAtt;
     uniform float _specN;
+    uniform sampler2D _Texture;
 
     struct vertIn
     {
         float4 vertex : POSITION;
         float4 normal : NORMAL;
         float4 color : COLOR;
+        float2 uv : TEXCOORD2;
     };
 
     struct vertOut
@@ -70,6 +75,7 @@ Shader "Unlit/PhongShader"
         float4 color : COLOR;
         float4 worldVertex : TEXCOORD0;
         float3 worldNormal : TEXCOORD1;
+        float2 uv : TEXCOORD2;
     };
 
     // Implementation of the vertex shader
@@ -93,6 +99,8 @@ Shader "Unlit/PhongShader"
         // in the fragment shader (and utilised)
         o.worldVertex = worldVertex;
         o.worldNormal = worldNormal;
+        
+        o.uv = v.uv;
 
         return o;
     }
@@ -128,8 +136,9 @@ Shader "Unlit/PhongShader"
         //float3 spe = fAtt * _PointLightColor.rgb * Ks * pow(saturate(dot(interpNormal, H)), specN);
 
         // Combine Phong illumination model components
+        float4 texColor = tex2D(_Texture, v.uv);
         float4 returnColor = float4(0.0f, 0.0f, 0.0f, 0.0f);
-        returnColor.rgb = amb.rgb + dif.rgb + spe.rgb;
+        returnColor.rgb = amb.rgb + dif.rgb + spe.rgb + texColor.rgb;
         returnColor.a = v.color.a;
 
         return returnColor;

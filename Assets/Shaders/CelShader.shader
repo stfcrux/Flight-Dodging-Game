@@ -15,7 +15,7 @@ Shader "Custom Cel Shader" {
         _SpecColor ("Specular Material Color", Color) = (1,1,1,1) 
         _Shininess ("Shininess", Range(0.5,1)) = 1	
         _OutlineThickness ("Outline Thickness", Range(0,1)) = 0.1
-        //_MainTex ("Main Texture", 2D) = "TextureName" {} // use this when we have a texture applied
+        _MainTex ("Main Texture", 2D) = "TextureName" {} // use this when we have a texture applied
     }
    
     SubShader {
@@ -120,7 +120,7 @@ Shader "Custom Cel Shader" {
                 float3 combinedLight = (ambientLight + diffuseReflection) * outlineStrength + specularReflection;
                 
                 //Decide what we should be returning, based on whether we have a texture or not
-                return float4(combinedLight, 1.0); // + tex2D(_MainTex, input.uv); // DELETE LINE COMMENTS & ';' TO ENABLE TEXTURE
+                return float4(combinedLight, 1.0) + tex2D(_MainTex, input.uv); // DELETE LINE COMMENTS & ';' TO ENABLE TEXTURE
             
             }
             

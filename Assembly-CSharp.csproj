@@ -10,7 +10,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace>
     </RootNamespace>
-    <ProjectGuid>{2718F6C6-D467-5059-AD1B-5FEB9F3908C2}</ProjectGuid>
+    <ProjectGuid>{73F7DE19-31B8-2D0E-488A-F985F490D874}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -78,17 +78,17 @@
     <None Include="Assets\Shaders\PhongShader.shader" />
     <None Include="Assets\Shaders\WaveShader.shader" />
     <None Include="Assets\Shaders\CelShader.shader" />
-    <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>/Users/trent/Developer/COMP30019/COMP30019-Project2/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>/Users/trent/Developer/COMP30019/COMP30019-Project2/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>/Users/trent/Developer/COMP30019/COMP30019-Project2/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>/Users/trent/Developer/comp30019-project2/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>/Users/trent/Developer/COMP30019/COMP30019-Project2/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>/Users/trent/Developer/comp30019-project2/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro.Editor">
+      <HintPath>/Users/trent/Developer/comp30019-project2/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.StandardEvents">
+      <HintPath>/Users/trent/Developer/comp30019-project2/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -321,7 +321,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{CB4C19BB-2CF6-FC3D-5F34-F1121D61254A}</Project>
+      <Project>{D38DB56D-47ED-C7C3-F02F-33D39362C5E9}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
     </ProjectReference>
   </ItemGroup>

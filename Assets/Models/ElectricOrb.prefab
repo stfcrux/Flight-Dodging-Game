@@ -8469,7 +8469,7 @@ ParticleSystem:
         m_RotationOrder: 4
     maxLights: 20
   TrailModule:
-    enabled: 1
+    enabled: 0
     mode: 0
     ratio: 0.2
     lifetime:
@@ -9466,7 +9466,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0.9811321, g: 0.5322179, b: 0.70756835, a: 1}
+      maxColor: {r: 0.754717, g: 0.09611962, b: 0.35031506, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}

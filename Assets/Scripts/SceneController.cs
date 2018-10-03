@@ -5,9 +5,30 @@ using UnityEngine.UI;
 
 public class SceneController : MonoBehaviour {
 
-    public void StartGameScene()
+    public void StartEasyGameScene()
     {
-        SceneManager.LoadScene("GameScene");
+        SceneManager.LoadScene("EasyGameScene");
+    }
+
+    public void StartMediumGameScene()
+    {
+        SceneManager.LoadScene("MediumGameScene");
+    }
+
+    public void StartHardGameScene()
+    {
+        SceneManager.LoadScene("HardGameScene");
+    }
+
+    public void StartToonGameScene()
+    {
+        SceneManager.LoadScene("ToonGameScene");
+    }
+
+
+    public void StartSelectGameScene()
+    {
+        SceneManager.LoadScene("LevelSelection");
     }
 
     public void StartMainMenu()

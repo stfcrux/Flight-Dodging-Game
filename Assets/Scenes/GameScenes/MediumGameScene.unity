@@ -1007,7 +1007,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c34a61630bf54953965ced3f7e268f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fireball: {fileID: 1520930665144684, guid: 446dc2d321a9c4af2bc4ed1ca670d059, type: 2}
+  fireball: {fileID: 1520930665144684, guid: 42fa83bd2bcee2e4b9ac796e78d2aae0, type: 2}
   player: {fileID: 106152098}
   objectPerRow: 6
   rowDistanceApart: 5

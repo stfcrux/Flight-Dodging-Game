@@ -960,7 +960,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c34a61630bf54953965ced3f7e268f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fireball: {fileID: 1520930665144684, guid: 446dc2d321a9c4af2bc4ed1ca670d059, type: 2}
+  fireball: {fileID: 1644760950834178, guid: 9e0c9db22c4f0f545808dd63530c37d5, type: 2}
   player: {fileID: 106152098}
   objectPerRow: 6
   rowDistanceApart: 5
@@ -1878,7 +1878,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 743e861815b8d5b40961b54ee8065bfc, type: 2}
+  - {fileID: 2100000, guid: 2e257fb74e39ac14883c26eb88167242, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

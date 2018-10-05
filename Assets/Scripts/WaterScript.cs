@@ -7,7 +7,11 @@ public class WaterScript : MonoBehaviour
 
     public int vertsPerSide;
     public PointLight pointLight;
+    public Texture texture;
     public float sideLength;
+    public int width = 256;
+    public int length = 256;
+    public float scale = 1;
 
     private Vector3[] vertices;
     private int[] triangles;
@@ -16,7 +20,7 @@ public class WaterScript : MonoBehaviour
     void Start()
     {
         // generate height maps
-        float[,] ys = new float[vertsPerSide, vertsPerSide];
+        float[,] ys = GenerateHeights();
 
         // generate triangle verticies from the heightmap
         SetTriangles(ys);
@@ -29,10 +33,13 @@ public class WaterScript : MonoBehaviour
         MeshRenderer meshRenderer = this.gameObject.AddComponent<MeshRenderer>();
 
         meshRenderer.material.shader =
-                Shader.Find("Unlit/WaveShader");
+                Shader.Find("Unlit/PhongShader");
+
+        meshRenderer.material.SetTexture("_Texture", texture);
 
         // Add MeshCollider for mesh object to avoid camera object
         gameObject.AddComponent<MeshCollider>();
+        mountainMesh.mesh.RecalculateNormals();
     }
 
     // Update is called once per frame
@@ -47,7 +54,6 @@ public class WaterScript : MonoBehaviour
         // Pass updated light positions to shader
         renderer.material.SetColor("_PointLightColor", this.pointLight.color);
         renderer.material.SetVector("_PointLightPosition", this.pointLight.GetWorldPosition());
-
     }
 
     private Mesh CreateWaterMesh()
@@ -106,5 +112,20 @@ public class WaterScript : MonoBehaviour
             triangles[i++] = j + ss;
             triangles[i++] = j + ss - 1;
         }
+    }
+
+    float[,] GenerateHeights()
+    {
+        float[,] heights = new float[width, length];
+        for (int x = 0; x < width; x++)
+        {
+            for (int y = 0; y < length; y++)
+            {
+                heights[x, y] =
+                    Mathf.PerlinNoise(x * scale / width, y * scale / width);
+            }
+        }
+
+        return heights;
     }
 }

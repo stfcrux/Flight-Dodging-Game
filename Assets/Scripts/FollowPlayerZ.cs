@@ -5,6 +5,7 @@ using UnityEngine;
 public class FollowPlayerZ : MonoBehaviour {
 
     public GameObject player;
+    public float atDistance = 0;
 
 	// Use this for initialization
 	void Start () {
@@ -15,6 +16,6 @@ public class FollowPlayerZ : MonoBehaviour {
 	void Update () {
         this.transform.position = new Vector3(transform.position.x,
                                               transform.position.y,
-                                              player.transform.position.z);
+                                              player.transform.position.z + atDistance);
 	}
 }

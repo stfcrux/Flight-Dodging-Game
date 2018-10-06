@@ -36,9 +36,11 @@ public class GenerateFireBalls : MonoBehaviour {
     void GenNewFireBalls(float z) {
         // generate objectPerRows random x fireballs
         for (int i = 0; i < objectPerRow; i++) {
-            Instantiate(fireball,
-                        new Vector3(Random.Range(minX, maxX),y,z),
-                        Quaternion.identity);
+            GameObject fb =
+                Instantiate(fireball,
+                        new Vector3(Random.Range(minX, maxX), y, z),
+                            Quaternion.identity);
+            fb.transform.SetParent(this.transform);
         }
     }
 

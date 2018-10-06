@@ -75,23 +75,28 @@
     <Compile Include="Assets\Scripts\RotatePropeller.cs" />
     <Compile Include="Assets\Scripts\SceneController.cs" />
     <Compile Include="Assets\Scripts\SpeedScoreController.cs" />
-    <Compile Include="Assets\Scripts\TerrainGenerator.cs" />
+    <Compile Include="Assets\Scripts\TerrainGeneration\EndlessTerrain.cs" />
+    <Compile Include="Assets\Scripts\TerrainGeneration\MapDisplay.cs" />
+    <Compile Include="Assets\Scripts\TerrainGeneration\MapGenerator.cs" />
+    <Compile Include="Assets\Scripts\TerrainGeneration\MeshGenerator.cs" />
+    <Compile Include="Assets\Scripts\TerrainGeneration\Noise.cs" />
+    <Compile Include="Assets\Scripts\TerrainGeneration\TextureGenerator.cs" />
     <Compile Include="Assets\Scripts\TerrainManager.cs" />
     <Compile Include="Assets\Scripts\WallController.cs" />
     <Compile Include="Assets\Scripts\WaterScript.cs" />
     <None Include="Assets\Shaders\PhongShader.shader" />
     <None Include="Assets\Shaders\CelShader.shader" />
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>/Users/trent/Developer/comp30019-project2/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>/Users/trent/comp30019-project2/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>/Users/trent/Developer/comp30019-project2/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>/Users/trent/comp30019-project2/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>/Users/trent/Developer/comp30019-project2/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>/Users/trent/comp30019-project2/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>/Users/trent/Developer/comp30019-project2/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>/Users/trent/comp30019-project2/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -275,9 +280,6 @@
     </Reference>
     <Reference Include="UnityEngine.Timeline">
       <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UIAutomation">
-      <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UIAutomation/UnityEngine.UIAutomation.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.GoogleAudioSpatializer">
       <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll</HintPath>

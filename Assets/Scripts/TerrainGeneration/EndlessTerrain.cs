@@ -97,6 +97,14 @@ public class EndlessTerrain : MonoBehaviour
 
             meshObject = new GameObject("Terrrain Chunk");
             meshRenderer = meshObject.AddComponent<MeshRenderer>();
+            PointLight pointLight = GameObject.Find("Point Light").GetComponent<PointLight>();
+            // Update point light (sun)
+            pointLight.Update();
+
+            // Pass updated light positions to shader
+            meshRenderer.material.SetColor("_PointLightColor", pointLight.color);
+            meshRenderer.material.SetVector("_PointLightPosition", pointLight.GetWorldPosition());
+
             meshFilter = meshObject.AddComponent<MeshFilter>();
             meshRenderer.material = material;
 
@@ -128,8 +136,10 @@ public class EndlessTerrain : MonoBehaviour
         public void UpdateChunk() {
             if (mapDataRecieved)
             {
+
                 float viewerDistance = Mathf.Sqrt(bounds.SqrDistance(viewerPostion));
-                bool visible = viewerDistance <= maxViewDistance;
+                bool visible = viewerDistance <= maxViewDistance
+                    && position.y + scale * MapGenerator.mapChunkSize * scale / 2  > viewerPostion.y;
 
                 if (visible)
                 {

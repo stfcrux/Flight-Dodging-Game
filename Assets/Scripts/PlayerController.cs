@@ -12,6 +12,8 @@ public class PlayerController : MonoBehaviour {
     public float outOfBoundsX;
 
     public UnityEvent gameOverEvent;
+    public UnityEvent pause;
+    public UnityEvent unpause;
 
     bool stopped = false;
 
@@ -26,6 +28,16 @@ public class PlayerController : MonoBehaviour {
     } 
 
     void Update () {
+        if (Input.GetKeyUp(KeyCode.Space)) {
+            stopped = !stopped;
+            if (stopped) {
+                pause.Invoke();
+            } else {
+                unpause.Invoke();
+            }
+        }
+
+
         // only move if the obejct is not stopped
         if (!stopped) {
             // update speed based on input
@@ -71,7 +83,7 @@ public class PlayerController : MonoBehaviour {
         }
     }
 
-    public void Stop() {
+    public void Die() {
         stopped = true;
         Renderer[] renderers = GetComponentsInChildren<Renderer>();
         for (int i = 0; i < renderers.Length; i++) {

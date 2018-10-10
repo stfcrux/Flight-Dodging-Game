@@ -16,9 +16,8 @@ public class SpeedScoreController : MonoBehaviour {
     void Update()
     {
         // keep the views updated
-        // todo unsure the effect this sort of thing has on framerate
         text.text = "Speed: " + player.Speed.ToString("0.0") + "\n" +
             "Min Speed: " + player.MinSpeed.ToString("0.0") + "\n" +
-            "Score: " + player.transform.position.z.ToString("0");
+            "Score: " + (player.transform.position.z * (GlobalOptions.difficulty + 1)).ToString("0");
 	}
 }

@@ -59,6 +59,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\External-Water\Scripts\WaterBasic.cs" />
     <Compile Include="Assets\Scripts\AirPlaneScript.cs" />
     <Compile Include="Assets\Scripts\BallScript.cs" />
     <Compile Include="Assets\Scripts\FireBallController.cs" />
@@ -78,15 +79,14 @@
     <Compile Include="Assets\Scripts\TerrainGeneration\MeshGenerator.cs" />
     <Compile Include="Assets\Scripts\TerrainGeneration\Noise.cs" />
     <Compile Include="Assets\Scripts\TerrainGeneration\TextureGenerator.cs" />
-    <Compile Include="Assets\Scripts\TerrainManager.cs" />
     <Compile Include="Assets\Scripts\UI\SceneController.cs" />
     <Compile Include="Assets\Scripts\UI\SpeedScoreController.cs" />
     <Compile Include="Assets\Scripts\WallController.cs" />
-    <Compile Include="Assets\Scripts\WaterScript.cs" />
     <None Include="Assets\Shaders\PhongShader.shader" />
     <None Include="Assets\Shaders\PhongShaderTerrain.shader" />
     <None Include="Assets\Shaders\TriPlanar.shader" />
-    <None Include="Assets\SkyBoxes-External\README.txt" />
+    <None Include="Assets\External-Water\Shaders\FXWaterBasic.shader" />
+    <None Include="Assets\External-Skyboxes\README.txt" />
     <None Include="Assets\Shaders\CelShader.shader" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>/Users/trent/comp30019-project2/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
@@ -328,12 +328,6 @@
     <Reference Include="Boo.Lang">
       <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/unity/Boo.Lang.dll</HintPath>
     </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{D38DB56D-47ED-C7C3-F02F-33D39362C5E9}</Project>
-      <Name>Assembly-CSharp-firstpass</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

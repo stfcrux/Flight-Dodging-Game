@@ -492,7 +492,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b027420bb1b0400f926016edcb1c6ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fog: {fileID: 1924081730805126, guid: 83121465fc9d44ee398e992906a624c3, type: 2}
+  fog: {fileID: 268834932}
   player: {fileID: 106152098}
   rowDistanceApart: 5
   y: 1

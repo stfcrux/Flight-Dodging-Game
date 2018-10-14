@@ -584,6 +584,7 @@ GameObject:
   - component: {fileID: 268834936}
   - component: {fileID: 268834935}
   - component: {fileID: 268834934}
+  - component: {fileID: 268834933}
   m_Layer: 0
   m_Name: Fog
   m_TagString: Untagged
@@ -591,6 +592,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &268834933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 268834932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d3ea39c1d78c43de9dd1451feca190d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 106152098}
+  viewMargin: 10
 --- !u!199 &268834934
 ParticleSystemRenderer:
   serializedVersion: 5

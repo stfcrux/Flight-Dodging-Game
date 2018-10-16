@@ -80,6 +80,7 @@
     <Compile Include="Assets\Scripts\TerrainGeneration\MeshGenerator.cs" />
     <Compile Include="Assets\Scripts\TerrainGeneration\Noise.cs" />
     <Compile Include="Assets\Scripts\TerrainGeneration\TextureGenerator.cs" />
+    <Compile Include="Assets\Scripts\UI\FinalScoreController.cs" />
     <Compile Include="Assets\Scripts\UI\SceneController.cs" />
     <Compile Include="Assets\Scripts\UI\SpeedScoreController.cs" />
     <Compile Include="Assets\Scripts\WallController.cs" />

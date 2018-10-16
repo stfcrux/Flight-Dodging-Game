@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour {
     public float maxRotation;
     public float upIncrement;
     public float outOfBoundsX;
+    public AudioSource explosion; 
 
     public UnityEvent gameOverEvent;
     public UnityEvent pause;
@@ -23,6 +24,8 @@ public class PlayerController : MonoBehaviour {
     private float minAcceleration;
 
     void Start () {
+
+        explosion = GetComponent<AudioSource>();
         minAcceleration = GlobalOptions.difficulty * 0.3f + 0.1f;
         MinSpeed = GlobalOptions.difficulty * 9 + 1;
     } 
@@ -79,6 +82,7 @@ public class PlayerController : MonoBehaviour {
     {
         if (col.gameObject.CompareTag("fireball"))
         {
+            explosion.Play();
             gameOverEvent.Invoke();
         }
     }

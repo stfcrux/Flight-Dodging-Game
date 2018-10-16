@@ -6,4 +6,6 @@ public class GlobalOptions : MonoBehaviour
 {
 
     public static float difficulty;
+
+    public static float previousBestScore;
 }

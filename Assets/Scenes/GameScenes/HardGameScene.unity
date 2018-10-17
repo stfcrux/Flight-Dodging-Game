@@ -6695,6 +6695,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 106152099}
+  level: 3
 --- !u!114 &1496246005
 MonoBehaviour:
   m_ObjectHideFlags: 0

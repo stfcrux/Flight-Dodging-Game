@@ -1043,6 +1043,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 106152099}
+  level: 1
 --- !u!114 &581988016
 MonoBehaviour:
   m_ObjectHideFlags: 0

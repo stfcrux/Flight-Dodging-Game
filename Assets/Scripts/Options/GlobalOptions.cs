@@ -7,5 +7,8 @@ public class GlobalOptions : MonoBehaviour
 
     public static float difficulty;
 
-    public static float previousBestScore;
+    public static float previousBestScoreToon;
+    public static float previousBestScoreEasy;
+    public static float previousBestScoreMedium;
+    public static float previousBestScoreHard;
 }

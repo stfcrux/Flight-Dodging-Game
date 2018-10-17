@@ -98,8 +98,6 @@ public class EndlessTerrain : MonoBehaviour
             meshObject = new GameObject("Terrrain Chunk");
             meshRenderer = meshObject.AddComponent<MeshRenderer>();
             PointLight pointLight = GameObject.Find("Point Light").GetComponent<PointLight>();
-            // Update point light (sun)
-            pointLight.Update();
 
             // Pass updated light positions to shader
             meshRenderer.material.SetColor("_PointLightColor", pointLight.color);

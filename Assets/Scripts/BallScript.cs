@@ -15,9 +15,6 @@ public class BallScript : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        // Update point light (sun)
-        pointLight.Update();
-
         // Get renderer component (in order to pass params to shader)
         MeshRenderer renderer = this.gameObject.GetComponent<MeshRenderer>();
 

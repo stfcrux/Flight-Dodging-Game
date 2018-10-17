@@ -19,9 +19,8 @@ public class FogController : MonoBehaviour {
 
     void Update()
     {
-        // if no longer in view (with some margin to be safe) destroy self
         if (player.transform.position.z >
-            this.transform.position.z + viewMargin)
+this.transform.position.z + viewMargin)
         {
             Destroy(this.gameObject);
         }

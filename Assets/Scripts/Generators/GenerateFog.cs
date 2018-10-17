@@ -27,10 +27,13 @@ public class GenerateFog : MonoBehaviour
     {
         // generate a new row if we have moved rowDistanceApart since generating
         // the last one
-        if (player.transform.position.z + rowDistanceApart * rowsShowing
-                > nextRowZ)
+        if (player != null)
         {
-            GenNextRow();
+            if (player.transform.position.z + rowDistanceApart * rowsShowing
+                    > nextRowZ)
+            {
+                GenNextRow();
+            }
         }
     }
 

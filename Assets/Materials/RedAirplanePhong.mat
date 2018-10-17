@@ -75,7 +75,7 @@ Material:
     - _GlossyReflections: 1
     - _Ka: 0.64
     - _Kd: 0.62
-    - _Ks: -0.05
+    - _Ks: 0.37
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
@@ -87,13 +87,13 @@ Material:
     - _SrcBlend: 1
     - _UVSec: 0
     - _ZWrite: 1
-    - _fAtt: 0.84
+    - _fAtt: 0.72
     - _specN: 1
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
-    - _PointLightColor: {r: 1, g: 1, b: 1, a: 1}
+    - _PointLightColor: {r: 0, g: 0, b: 0, a: 1}
     - _PointLightPosition: {r: 0, g: 1000, b: 500, a: 0}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
     - _SpecColor: {r: 1, g: 1, b: 1, a: 1}

@@ -7,7 +7,6 @@ public class WallController : MonoBehaviour {
     public GameObject player;
 
     void Update () {
-
         MeshRenderer renderer = GetComponent<MeshRenderer>();
         Material material = renderer.materials[0];
         Color col = renderer.material.GetColor("_Color");

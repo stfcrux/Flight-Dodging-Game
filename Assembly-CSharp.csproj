@@ -83,8 +83,6 @@
     <Compile Include="Assets\Scripts\UI\SpeedScoreController.cs" />
     <Compile Include="Assets\Scripts\WallController.cs" />
     <None Include="Assets\Shaders\PhongShader.shader" />
-    <None Include="Assets\Shaders\PhongShaderTerrain.shader" />
-    <None Include="Assets\Shaders\TriPlanar.shader" />
     <None Include="Assets\External-Water\Shaders\FXWaterBasic.shader" />
     <None Include="Assets\External-Skyboxes\README.txt" />
     <None Include="Assets\Shaders\CelShader.shader" />

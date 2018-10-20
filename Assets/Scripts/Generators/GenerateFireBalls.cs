@@ -37,7 +37,7 @@ public class GenerateFireBalls : MonoBehaviour {
             GenNextRow();
         }
         // generate one fb per frame
-        for (int i = 0; i < 3; i++)
+        for (int i = 0; i < 2; i++)
         {
             if (currIndex > 0)
             {
